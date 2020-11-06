@@ -1,0 +1,54 @@
+@import '../../global.scss';
+
+.top-bar {
+    display: flex;
+    height: 100%;
+    align-self: center;
+    padding: 2%;
+    border: 2px solid $dark-blue;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: $dark-blue;
+        font-size: 40px;
+    }
+}
+
+.overall-budget-section {
+    display: flex;
+    height: 150px;
+    padding: 2%;
+    border: 2px solid $dark-blue;
+    border-radius: 5px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        display: flex;
+        font-weight: 600;
+        font-size: 40px;
+
+        &.green {
+            color: lighten($green, 5%); // lighten is a sass function that lightens colors
+        }
+
+        &.red {
+            color: lighten($red, 5%); // lighten is a sass function that lightens colors
+        }
+    }
+}
