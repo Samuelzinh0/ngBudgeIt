@@ -10,7 +10,7 @@ $dark-blue:#080170;
 
 // For profit
 $green: #01a01b;
-$light-green: #00ff2a;
+$light-green: #00b91f;
 
 // For loss
 $red: #d60000;
@@ -24,5 +24,6 @@ $link: $main;
 // Update some of Bulma's component variables
 $body-background-color: #ffffff;
 $control-border-width: 2px;
-$input-border-color: $light-grey;
+$input-border-color: transparent;
+$input-background-color: $light-grey;
 $input-shadow: none;

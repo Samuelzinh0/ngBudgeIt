@@ -1,0 +1,51 @@
+@import '../../global.scss';
+
+.budget-list-section{
+    display: flex;
+    padding: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    .budget-list-container{
+        display: flex;
+        max-width: 680px;
+        height: 100%;
+        width: 100%;
+
+        .income-column, .expenses-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            flex-grow: 1;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+
+        .income-column {
+            margin-right: 35px;
+
+            border-style: solid;
+            border-color: $green;
+            border-radius: 5px;
+        
+            h1 {
+                color: $light-green;
+            }
+        }
+
+        .expenses-column {
+
+            border-style: solid;
+            border-color: $red;
+            border-radius: 5px;
+        
+            h1 {
+                color: $light-red;
+            }
+        }
+    }
+}

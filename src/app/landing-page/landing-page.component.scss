@@ -3,14 +3,12 @@
 .top-bar {
     display: flex;
     height: 100%;
-    align-self: center;
-    padding: 2%;
-    border: 2px solid $dark-blue;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    // align-self: center;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
 
     justify-content: center;
     align-items: center;
@@ -26,14 +24,9 @@
 .overall-budget-section {
     display: flex;
     height: 150px;
-    padding: 2%;
-    border: 2px solid $dark-blue;
-    border-radius: 5px;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
 
     justify-content: center;
     align-items: center;
@@ -50,5 +43,16 @@
         &.red {
             color: lighten($red, 5%); // lighten is a sass function that lightens colors
         }
+    }
+}
+
+.add-budget-section {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    .add-budget-container {
+        width: 600px;
     }
 }
