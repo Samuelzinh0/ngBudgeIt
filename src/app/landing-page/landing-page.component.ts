@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BudgetItem } from 'src/public/models/budget-item.model';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  budgetItems: BudgetItem[] = new Array<BudgetItem>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addItem(newItem: BudgetItem) {
+    this.budgetItems.push(newItem);
   }
 
 }

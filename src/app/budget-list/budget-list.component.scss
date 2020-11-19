@@ -28,23 +28,44 @@
         .income-column {
             margin-right: 35px;
 
-            border-style: solid;
+            border-style: groove;
             border-color: $green;
             border-radius: 5px;
         
             h1 {
+                margin-left: 10px;
                 color: $light-green;
+            }
+
+            .budget-items {
+                display: flex;
+                flex-direction: column;
+
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
             }
         }
 
         .expenses-column {
 
-            border-style: solid;
+            border-style: groove;
             border-color: $red;
             border-radius: 5px;
         
             h1 {
+                margin-left: 10px;
                 color: $light-red;
+            }
+
+            .budget-items {
+                display: flex;
+                flex-direction: column;
+
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
             }
         }
     }

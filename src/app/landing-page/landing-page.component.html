@@ -1,21 +1,26 @@
-<div class="top-bar">
-    <h1>Budge It - Don't Spend It!</h1>
-</div>
-
-<hr>
-
-<div class="title has-text-centered">Overall Budget</div>
-
-<section class="overall-budget-section">
-    <h2 class="default">9000</h2>
-</section>
-
-<section class="add-budget-section">
-    <div class="add-budget-container">
-        <hr>
-        <app-add-budget-form></app-add-budget-form>
-        <hr>
+<div class="background">
+    <div class="top-bar">
+        <h1>Budge It - Don't Spend It!</h1>
     </div>
-</section>
 
-<app-budget-list></app-budget-list>
+    <hr>
+
+    <div class="title has-text-centered">Overall Budget</div>
+
+    <section class="overall-budget-section">
+        <h2 class="default">9000</h2>
+    </section>
+
+    <section class="add-budget-section">
+        <div class="add-budget-container">
+            <hr>
+
+            <app-add-budget-form (formSubmit)="addItem($event)" ></app-add-budget-form>
+            
+            <hr>
+        </div>
+    </section>
+
+    <app-budget-list [budgetItems]="budgetItems"></app-budget-list>
+
+</div>

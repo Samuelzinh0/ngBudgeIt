@@ -1,1 +1,12 @@
-<p>budget-list-item works!</p>
+<div class="root">
+    <div class="budget-list-item" [ngClass]="{ 'income': item.quantity >= 0, 'expense': item.quantity < 0 }">
+        <div class="description">
+            <p>{{ item.title }}</p>
+        </div>
+        <div class="amount">
+            <p>{{ item.quantity }}</p>
+        </div>
+    </div>
+
+    <div class="del-icon"></div>
+</div>
