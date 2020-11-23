@@ -21,6 +21,6 @@
         </div>
     </section>
 
-    <app-budget-list [budgetItems]="budgetItems"></app-budget-list>
+    <app-budget-list [budgetItems]="budgetItems" (delete)="deleteItem($event)"></app-budget-list>
 
 </div>
