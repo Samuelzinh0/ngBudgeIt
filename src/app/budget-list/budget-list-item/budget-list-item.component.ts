@@ -10,7 +10,7 @@ export class BudgetListItemComponent implements OnInit {
 
   @Input() item: BudgetItem;
   @Output() delBtnClick: EventEmitter<any> = new EventEmitter<any>();
-
+  @Output() itemClick: EventEmitter<any> = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +18,10 @@ export class BudgetListItemComponent implements OnInit {
 
   onDelBtnClick() {
     this.delBtnClick.emit();
+  }
+
+  onItemClick() {
+    this.itemClick.emit();
   }
 
 }

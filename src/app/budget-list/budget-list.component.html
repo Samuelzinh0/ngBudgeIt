@@ -9,7 +9,8 @@
                     <app-budget-list-item 
                     *ngIf="item.quantity >= 0"
                     [item]="item"
-                    (delBtnClick)="onDelBtnClicked(item)" 
+                    (delBtnClick)="onDelBtnClicked(item)"
+                    (itemClick)="onItemClicked(item)"   
                     style="margin-bottom: 20px;"></app-budget-list-item>
                 </div>
             </div>
@@ -23,7 +24,8 @@
                     <app-budget-list-item 
                     *ngIf="item.quantity < 0"
                     [item]="item"
-                    (delBtnClick)="onDelBtnClicked(item)"  
+                    (delBtnClick)="onDelBtnClicked(item)"
+                    (itemClick)="onItemClicked(item)"  
                     style="margin-bottom: 20px;"></app-budget-list-item>
                 </div>
             </div>

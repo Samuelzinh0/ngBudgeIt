@@ -8,7 +8,7 @@
     <div class="title has-text-centered">Overall Budget</div>
 
     <section class="overall-budget-section">
-        <h2 class="default">9000</h2>
+        <h2 [ngClass]="{ 'red': overallBudget < 0, 'green': overallBudget > 0 }">{{ overallBudget }}</h2>
     </section>
 
     <section class="add-budget-section">
@@ -21,6 +21,6 @@
         </div>
     </section>
 
-    <app-budget-list [budgetItems]="budgetItems" (delete)="deleteItem($event)"></app-budget-list>
+    <app-budget-list [budgetItems]="budgetItems" (delete)="deleteItem($event)" (update)="updateItem($event)"></app-budget-list>
 
 </div>
