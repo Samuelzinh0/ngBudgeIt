@@ -2,11 +2,8 @@
     <div class="top-bar">
         <h1>Budge It - Don't Spend It!</h1>
     </div>
-
     <hr>
-
     <div class="title has-text-centered">Overall Budget</div>
-
     <section class="overall-budget-section">
         <h2 [ngClass]="{ 'red': overallBudget < 0, 'green': overallBudget > 0 }">{{ overallBudget }}</h2>
     </section>
@@ -14,9 +11,7 @@
     <section class="add-budget-section">
         <div class="add-budget-container">
             <hr>
-
-            <app-add-budget-form (formSubmit)="addItem($event)" ></app-add-budget-form>
-            
+            <app-add-budget-form (formSubmit)="addChannel($event)"></app-add-budget-form>
             <hr>
         </div>
     </section>

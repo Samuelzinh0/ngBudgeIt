@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { BudgetItem } from 'src/public/models/budget-item.model';
+import { BudgetItem } from 'src/public/models/channel-item.model';
 
 @Component({
   selector: 'app-budget-list-item',

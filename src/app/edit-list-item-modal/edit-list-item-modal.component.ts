@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { BudgetItem } from 'src/public/models/budget-item.model';
+import { BudgetItem } from 'src/public/models/channel-item.model';
 
 @Component({
   selector: 'app-edit-list-item-modal',
